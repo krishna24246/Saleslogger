@@ -2,7 +2,7 @@
 
 A high-fidelity mobile application for sales professionals to log visits and get AI-powered insights.
 
-### 🚀 Key Features
+###  Key Features
 *   **Splash Screen**: Professional animated entry with branded 3D logo.
 *   **Visit Logging**: Easy input for customer names, locations, and contacts.
 *   **Native Calendar**: Professional date and time selection using system dialogs.
