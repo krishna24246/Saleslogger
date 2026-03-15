@@ -1,0 +1,31 @@
+
+> SalesLoggerApp@0.0.1 lint
+> eslint .
+
+
+E:\rt intern\SalesLoggerApp\src\screens\CreateEditVisitScreen.tsx
+    1:27  error    'useEffect' is defined but never used                                                                               @typescript-eslint/no-unused-vars
+   10:3   error    'Alert' is defined but never used                                                                                   @typescript-eslint/no-unused-vars
+   35:21  error    'setVisitDate' is assigned a value but never used. Allowed unused elements of array destructuring must match /^_/u  @typescript-eslint/no-unused-vars
+   36:21  error    'setVisitTime' is assigned a value but never used. Allowed unused elements of array destructuring must match /^_/u  @typescript-eslint/no-unused-vars
+   97:16  warning  Inline style: { flex: 1 }                                                                                           react-native/no-inline-styles
+  125:41  warning  Inline style: { flex: 1 }                                                                                           react-native/no-inline-styles
+  141:41  warning  Inline style: { flex: 1 }                                                                                           react-native/no-inline-styles
+
+E:\rt intern\SalesLoggerApp\src\screens\SyncSettingsScreen.tsx
+   1:17  error    'useEffect' is defined but never used                                    @typescript-eslint/no-unused-vars
+  47:45  warning  Inline style: { backgroundColor: "isUnsynced ? '#f97316' : '#22c55e'" }  react-native/no-inline-styles
+  91:47  warning  Inline style: { backgroundColor: '#fee2e2' }                             react-native/no-inline-styles
+  93:47  warning  Inline style: { color: '#ef4444' }                                       react-native/no-inline-styles
+  94:50  warning  Inline style: { color: '#f87171' }                                       react-native/no-inline-styles
+
+E:\rt intern\SalesLoggerApp\src\screens\VisitDetailsScreen.tsx
+   34:6   error    React Hook useEffect has missing dependencies: 'handleGenerateAI' and 'visit'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+   42:14  error    'error' is defined but never used                                                                                                  @typescript-eslint/no-unused-vars
+   83:26  warning  Inline style: { flex: 1 }                                                                                                          react-native/no-inline-styles
+  122:50  warning  Inline style: { color: '#ef4444' }                                                                                                 react-native/no-inline-styles
+  125:48  warning  Inline style: { backgroundColor: '#ef4444' }                                                                                       react-native/no-inline-styles
+  132:50  warning  Inline style: { color: '#10b981' }                                                                                                 react-native/no-inline-styles
+
+✖ 18 problems (7 errors, 11 warnings)
+
