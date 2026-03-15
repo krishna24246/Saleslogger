@@ -1,52 +1,29 @@
-# Sales AI - AI-Assisted Sales Visit Logger
+# Sales AI - Premium Visit Logger
 
-A premium mobile application for field sales reps to log customer visits, manage offline data, and generate AI-assisted meeting summaries.
+A high-fidelity mobile application for sales professionals to log visits and get AI-powered insights.
 
-## 🚀 Key Features
-- **Smart Logging**: Quickly record visit details with location and contact info.
-- **AI Summaries**: Automatically generate structured summaries (meeting notes, pain points, action items) from raw notes.
-- **Offline First**: Full functionality without internet. Data persists locally using AsyncStorage.
-- **Seamless Sync**: Robust sync mechanism with manual retry and status indicators (Draft, Syncing, Synced, Failed).
-- **Modern UI**: High-fidelity, premium design system built with custom styles.
+### 🚀 Key Features
+*   **Splash Screen**: Professional animated entry with branded 3D logo.
+*   **Visit Logging**: Easy input for customer names, locations, and contacts.
+*   **Native Calendar**: Professional date and time selection using system dialogs.
+*   **Gemini AI Summaries**: Deep analysis of meeting notes to extract pain points and tasks.
+*   **Offline Support**: Data is saved locally; work anywhere without internet.
+*   **Data Management**: Professional options to Edit or Delete visit logs.
 
-## 🛠 Tech Stack
-- **Framework**: React Native CLI
-- **Language**: TypeScript
-- **State & Persistence**: Zustand + AsyncStorage
-- **Navigation**: React Navigation
-- **Architecture**: Service-oriented with mock AI integration.
+### 📋 Setup & Installation (Simple Steps)
+1.  **Open Terminal**: Navigate to the `SalesLoggerApp` folder.
+2.  **Install Packages**: Run `npm install` to get all dependencies.
+3.  **Start Metro**: Run `npx react-native start --port 8081`.
+4.  **Connect Device**: Ensure your phone or emulator is connected via USB.
+5.  **Run App**:
+    *   For Android: `npx react-native run-android`
+    *   For iOS: `npx react-native run-ios`
 
-## 📋 Setup Instructions
+### 📂 Folder Guide
+*   `src/screens`: All the app pages (Login, Dashboard, Details).
+*   `src/services`: The "Brain" of the app (Gemini AI integration).
+*   `src/store`: Where we save your data locally.
+*   `src/assets`: Branded logos and icons.
 
-### Prerequisites
-- Node.js (v18+)
-- Android Studio / Xcode
-- React Native environment (Cocoapods for iOS)
-
-### Installation
-1. Navigate to the project directory:
-   ```bash
-   cd SalesLoggerApp
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run on Android:
-   ```bash
-   npx react-native run-android
-   ```
-4. Run on iOS (macOS required):
-   ```bash
-   npx react-native run-ios
-   ```
-
-## 📂 Project Structure
-- `/src/store`: State management via Zustand.
-- `/src/screens`: All feature screens (Login, Dashboard, Visit Details, etc.).
-- `/src/services`: External integrations (Mock AI service).
-- `/src/navigation`: App routing configuration.
-- `/src/types`: TypeScript definitions.
-
-## 💡 AI Implementation
-The app simulates a connection to an AI LLM via a dedicated service. It analyzes raw meeting notes to extract key insights, demonstrating how real-world AI agents can assist sales professionals in real-time.
+### 💡 Manual AI Cleanup
+The AI integration has been manually tuned to avoid "404 errors" and "JSON Parse" crashes by using a stable direct connection to Google's API.
