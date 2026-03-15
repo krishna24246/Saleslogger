@@ -25,5 +25,3 @@ A high-fidelity mobile application for sales professionals to log visits and get
 *   `src/store`: Where we save your data locally.
 *   `src/assets`: Branded logos and icons.
 
-### 💡 Manual AI Cleanup
-The AI integration has been manually tuned to avoid "404 errors" and "JSON Parse" crashes by using a stable direct connection to Google's API.
